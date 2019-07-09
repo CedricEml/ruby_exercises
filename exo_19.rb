@@ -1,5 +1,13 @@
 array = []
-50.times do |n|
-array << "jean.dupont.#{n+1}@email.fr"
+
+50.times do |i|
+    chiffre = i + 1
+    array << "jean.dupont.#{chiffre}@email.com"
 end
-array.each { |n| puts n if n.to_f%2==0}
+
+array.size.times do |i|
+  chiffre = i + 1
+  if chiffre%2 == 0
+    puts array[i]
+  end
+end
