@@ -1,1 +1,1 @@
-test
+puts "Bonjour, monde!"
