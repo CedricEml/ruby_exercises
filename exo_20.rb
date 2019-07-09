@@ -1,10 +1,6 @@
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-puts "<"
-lvl = gets.chomp.to_i
-n = lvl
-br = "\n" * 2
-puts "Voici la pyramide :#{br}"
-for i in 1..n do
-  puts "# " * i
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages (entre 1 et 25) veux-tu ?"
+nombre = gets.chomp.to_i
+nombre.times do |i|
+puts "#"*(i+1)
+break if i+1>25
 end
-puts br
